@@ -70,7 +70,7 @@ for subjix=1:1
       snr2 = cat(3,snr2,translatevmetric(vmetric2));
       %keyboard;
     end
-    % keyboard;
+    keyboard;
     nsd_savenifti(snr,[1.8 1.8 1.8],sprintf('%s/ncsnr.nii.gz',bdirs{pp}),4/3);
     nsd_savenifti(snr1,[1.8 1.8 1.8],sprintf('%s/ncsnr_split1.nii.gz',bdirs{pp}),4/3);
     nsd_savenifti(snr2,[1.8 1.8 1.8],sprintf('%s/ncsnr_split2.nii.gz',bdirs{pp}),4/3);
